@@ -30,6 +30,8 @@ Minimum requirement
 * Display the tweets in the order the json file defines them. The app should display the author, the tweet and the date it was tweeted at. Tweets are variable length, so the cells must be properly sized to the content
 * When done, send a pull request to this project (e.g don't email me your project :))
 
+Keep in mind that the repo is public, so forking and sending a pull request will be shown in your public GitHub activity. If that doesn't work out for you for whatever reason, you can simply clone the repo locally, and submit your work back as a zip file to the recruiter.
+
 Bonuses (in no particular order)
 --------------------------------
 
