@@ -22,6 +22,19 @@ The timeline is a chronologically ordered (ascending order) list of tweets.
 
 Since the topic is very simple, yet offers so many possibilities at the same time, there is a minimum requirement, and bonuses.
 
+Development Notes
+-------------------
+
+OpenTweet uses two collection views to display tweets. The main timeline view, and then a detail view for each tweet. When viewing detail the tweet will display along with a tweet that it replies to (above it) and a list of tweets that reply to it (below). 
+
+Things to improve:
+
+- More tests, the tweet data coordinator is testest but it would be good to have some ui and integration tests included here. Testing the tweet data coordinator gets us some good coverage as far as improting the json data and creating model objects goes though. 
+- More animations!
+- Cache remote images loaded. Right now the avatar images are loaded but they are never cached so they will reload when loaded. 
+- Links while highlighted, are not clickable. There should be some way to access them.
+
+
 Minimum requirement
 -------------------
 

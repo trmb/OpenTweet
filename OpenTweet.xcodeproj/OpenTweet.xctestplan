@@ -1,0 +1,44 @@
+{
+  "configurations" : [
+    {
+      "id" : "F955FB62-F2F4-4841-989C-8D8F72FE9454",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "environmentVariableEntries" : [
+      {
+        "key" : "OS_ACTIVITY_MODE",
+        "value" : "disable"
+      }
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:OpenTweet.xcodeproj",
+      "identifier" : "009C4C671D9F0CD600F0BC6C",
+      "name" : "OpenTweet"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:OpenTweet.xcodeproj",
+        "identifier" : "009C4C7B1D9F0CD600F0BC6C",
+        "name" : "OpenTweetTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:OpenTweet.xcodeproj",
+        "identifier" : "009C4C861D9F0CD600F0BC6C",
+        "name" : "OpenTweetUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

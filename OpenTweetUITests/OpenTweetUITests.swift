@@ -28,9 +28,26 @@ class OpenTweetUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testInitialStateCollectionView() {
+        let collection = XCUIApplication().collectionViews
+        XCTAssertTrue(collection.cells.count > 2)
     }
     
+    func testTweetShowsRepliesIfPResent() {
+        let app = XCUIApplication()
+        app.collectionViews.cells.element(boundBy: 1).tap()
+        XCTAssertTrue(app.collectionViews.staticTexts["Replies"].exists)
+    }
+    
+    func testTweetDoesNotShowsRepliesWhenNotPresent() {
+        let app = XCUIApplication()
+        app.collectionViews.cells.element(boundBy: 0).tap()
+        XCTAssertFalse(app.collectionViews.cells["Replies"].exists)
+    }
+    
+    func testGoBackFromTweet() {
+        let app = XCUIApplication()
+        app.collectionViews.cells.element(boundBy: 1).tap()
+        app.buttons["Timeline"].tap()
+    }
 }

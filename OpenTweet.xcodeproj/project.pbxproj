@@ -15,6 +15,13 @@
 		009C4C811D9F0CD600F0BC6C /* OpenTweetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009C4C801D9F0CD600F0BC6C /* OpenTweetTests.swift */; };
 		009C4C8C1D9F0CD600F0BC6C /* OpenTweetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009C4C8B1D9F0CD600F0BC6C /* OpenTweetUITests.swift */; };
 		009C4C9B1D9F0D4100F0BC6C /* timeline.json in Resources */ = {isa = PBXBuildFile; fileRef = 009C4C9A1D9F0D4100F0BC6C /* timeline.json */; };
+		8135CF0F276839B40080B7CC /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135CF0E276839B40080B7CC /* TweetViewController.swift */; };
+		8135CF11276848460080B7CC /* TweetDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135CF10276848460080B7CC /* TweetDetailViewCell.swift */; };
+		8135CF132769015C0080B7CC /* TweetCellUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135CF122769015C0080B7CC /* TweetCellUtil.swift */; };
+		8135CF19276949400080B7CC /* TweetDataCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135CF18276949400080B7CC /* TweetDataCoordinatorTests.swift */; };
+		81B0E8B9276568FE00635CEE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B0E8B8276568FE00635CEE /* Colors.xcassets */; };
+		81B0E8BB27657B2600635CEE /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0E8BA27657B2600635CEE /* Tweet.swift */; };
+		81E53F08276000B7005E9BA2 /* TweetDataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E53F07276000B7005E9BA2 /* TweetDataCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,14 @@
 		009C4C8D1D9F0CD600F0BC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		009C4C9A1D9F0D4100F0BC6C /* timeline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timeline.json; sourceTree = "<group>"; };
 		009C4C9D1D9F104800F0BC6C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8135CF0D2766DA790080B7CC /* OpenTweet.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = OpenTweet.xctestplan; path = OpenTweet.xcodeproj/OpenTweet.xctestplan; sourceTree = "<group>"; };
+		8135CF0E276839B40080B7CC /* TweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
+		8135CF10276848460080B7CC /* TweetDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailViewCell.swift; sourceTree = "<group>"; };
+		8135CF122769015C0080B7CC /* TweetCellUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCellUtil.swift; sourceTree = "<group>"; };
+		8135CF18276949400080B7CC /* TweetDataCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDataCoordinatorTests.swift; sourceTree = "<group>"; };
+		81B0E8B8276568FE00635CEE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		81B0E8BA27657B2600635CEE /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		81E53F07276000B7005E9BA2 /* TweetDataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDataCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +95,7 @@
 		009C4C5F1D9F0CD600F0BC6C = {
 			isa = PBXGroup;
 			children = (
+				8135CF0D2766DA790080B7CC /* OpenTweet.xctestplan */,
 				009C4C6A1D9F0CD600F0BC6C /* OpenTweet */,
 				009C4C991D9F0D4100F0BC6C /* Data */,
 				009C4C7F1D9F0CD600F0BC6C /* OpenTweetTests */,
@@ -104,10 +120,16 @@
 			children = (
 				009C4C6B1D9F0CD600F0BC6C /* AppDelegate.swift */,
 				009C4C6D1D9F0CD600F0BC6C /* TimelineViewController.swift */,
+				8135CF0E276839B40080B7CC /* TweetViewController.swift */,
+				81E53F07276000B7005E9BA2 /* TweetDataCoordinator.swift */,
+				8135CF10276848460080B7CC /* TweetDetailViewCell.swift */,
+				81B0E8BA27657B2600635CEE /* Tweet.swift */,
+				8135CF122769015C0080B7CC /* TweetCellUtil.swift */,
 				009C4C6F1D9F0CD600F0BC6C /* Main.storyboard */,
 				009C4C741D9F0CD600F0BC6C /* LaunchScreen.storyboard */,
 				009C4C721D9F0CD600F0BC6C /* Assets.xcassets */,
 				009C4C771D9F0CD600F0BC6C /* Info.plist */,
+				81B0E8B8276568FE00635CEE /* Colors.xcassets */,
 			);
 			path = OpenTweet;
 			sourceTree = "<group>";
@@ -116,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				009C4C801D9F0CD600F0BC6C /* OpenTweetTests.swift */,
+				8135CF18276949400080B7CC /* TweetDataCoordinatorTests.swift */,
 				009C4C821D9F0CD600F0BC6C /* Info.plist */,
 			);
 			path = OpenTweetTests;
@@ -248,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B0E8B9276568FE00635CEE /* Colors.xcassets in Resources */,
 				009C4C9B1D9F0D4100F0BC6C /* timeline.json in Resources */,
 				009C4C761D9F0CD600F0BC6C /* LaunchScreen.storyboard in Resources */,
 				009C4C731D9F0CD600F0BC6C /* Assets.xcassets in Resources */,
@@ -277,7 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				009C4C6E1D9F0CD600F0BC6C /* TimelineViewController.swift in Sources */,
+				8135CF11276848460080B7CC /* TweetDetailViewCell.swift in Sources */,
+				81B0E8BB27657B2600635CEE /* Tweet.swift in Sources */,
+				8135CF0F276839B40080B7CC /* TweetViewController.swift in Sources */,
 				009C4C6C1D9F0CD600F0BC6C /* AppDelegate.swift in Sources */,
+				8135CF132769015C0080B7CC /* TweetCellUtil.swift in Sources */,
+				81E53F08276000B7005E9BA2 /* TweetDataCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8135CF19276949400080B7CC /* TweetDataCoordinatorTests.swift in Sources */,
 				009C4C811D9F0CD600F0BC6C /* OpenTweetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,7 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QPU8QS3E62;
 				INFOPLIST_FILE = OpenTweet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.OpenTweet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -467,7 +497,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QPU8QS3E62;
 				INFOPLIST_FILE = OpenTweet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.OpenTweet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,7 +512,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = QPU8QS3E62;
 				INFOPLIST_FILE = OpenTweetTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.OpenTweetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,7 +528,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = QPU8QS3E62;
 				INFOPLIST_FILE = OpenTweetTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.OpenTweetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,7 +543,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QPU8QS3E62;
 				INFOPLIST_FILE = OpenTweetUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.OpenTweetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -528,7 +558,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QPU8QS3E62;
 				INFOPLIST_FILE = OpenTweetUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.OpenTweetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
